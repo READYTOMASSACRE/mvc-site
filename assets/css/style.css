@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(/assets/img/bg.png);
+  font-size: 16px;
+  font-family: 'Cuprum', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+.floatfix:after {
+  clear: both;
+}
+
+.floatfix:before, .floatfix:after {
+  content: " ";
+  display:table;
+}
+
+:before, :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.header {
+  max-width:100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 18px 0px;
+  background: white;
+}
+
+div.centered {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+a.logo {
+  text-decoration: none;
+}
+span.logo {
+  font-family: 'Cuprum';
+  font-weight: bold;
+  font-size: 24px;
+  background: url('http://www.clker.com/cliparts/0/e/3/e/1366375738990285743Music_Disk.svg.med.png') left center no-repeat;
+  color: #008BBA;
+  padding-left: 30px;
+  background-size: 20px 20px;
+}
+
+div.exit-form {
+  display: inline;
+  height: 30px;
+  margin: 0 0 13px 0;
+  position: relative;
+  background: linear-gradient(to bottom, #fff, #f6f6f6);
+  color: #333;
+  box-shadow: 0 2px 2px rgba(137, 137, 137, 0.4) inset;
+}
+
+div.exit-form input.exit-button {
+  height: 32px;
+  padding: 0 16px 2px 16px;
+  display: inline-block;
+  background: url('http://best-muzon.com/templates/ortemp/img/button-default.png') repeat-x;
+  color: #fff;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+
+div.search-form {
+  display: inline;
+  float:right;
+  height: 30px;
+  margin: 0 0 13px 0;
+  position: relative;
+  background: linear-gradient(to bottom, #fff, #f6f6f6);
+  color: #333;
+  box-shadow: 0 2px 2px rgba(137, 137, 137, 0.4) inset;
+}
+
+div.search-form input.search-input {
+  width: 232px;
+  padding: 0 10px 0 36px;
+  background: url('http://best-muzon.com/templates/ortemp/img/sprite.png') -689px 0 no-repeat;
+  box-shadow: none;
+  height: 30px;
+  color: #333;
+  border: none;
+  font-family:inherit;
+}
+div.search-form input.search-input:focus {
+  outline: none;
+}
+
+div.search-form input.search-button {
+  height: 32px;
+  padding: 0 16px 2px 16px;
+  display: inline-block;
+  background: url('http://best-muzon.com/templates/ortemp/img/button-default.png') repeat-x;
+  color: #fff;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+div.search-button {
+  height: 32px;
+  padding: 0 16px 2px 16px;
+  display: inline-block;
+  background: url('http://best-muzon.com/templates/ortemp/img/button-default.png') repeat-x;
+  color: #fff;
+  border: none;
+  opacity: 0.7;
+  cursor: pointer;
+  font-family: inherit;
+}
+div.search-form input.search-button:hover {
+  opacity: 1;
+}
+
+div.menu {
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 10px 0px;
+  background: white;
+  margin-top: 1px;
+  padding-bottom: 0px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+a, a:hover {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.menu ul li:first-child {
+  margin-left 0px;
+}
+
+div.menu ul li {
+  display: inline-block;
+	position: relative;
+	padding-bottom: 12px;
+  margin-right: 20px;
+}
+
+div.menu ul li:last-child {
+  margin-right: 0;
+}
+div.menu ul li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+div.menu ul li:hover:after {
+  width: 100%;
+  background: #04A7DE;
+}
+
+div.menu ul li.space:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #04A7DE;
+}
+
+div.menu ul li a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+div.wrapper {
+  width: 980px;
+  margin: auto;
+  padding: 30px 0 30px;
+  position: relative;
+  background: white;
+  margin-top: 5px;
+}
+
+div.main {
+  min-height: 600px;
+  padding: 16px 30px 30px;
+  position: relative;
+}
+div.content-wrapper {
+  width: 100%;
+  float: left;
+  margin: 0 -270px 0 0;
+  background: white;
+}
+
+div.content {
+  margin: 0 270px 0 0;
+}
+
+
+div.content p {
+  clear: both;
+  text-indent: 20px;
+  margin-left: 200px;
+}
+div.content nav {
+  position: absolute;
+  width: 200px;
+}
+
+div.category-title {
+  padding: 2px 0 14px 40px;
+  background: url('/assets/img/icon.png') no-repeat;
+  position: relative;
+  min-height: 28px;
+  font-size: 21px;
+}
+
+div.category-title h1 {
+  float: left;
+  margin 0 0 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+div.category-sort {
+  float: right;
+  position: relative;
+  top: 5px;
+  line-height: 0.8em;
+  padding: 0 0 14px 0;
+}
+
+div.category-sort div.select-name {
+  margin: 0 3px 0 0;
+  float: left;
+  font-size: 13px;
+}
+
+div.category-sort div.select-wrapper {
+  float: left;
+}
+
+div.category-sort span.select-box {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+div.category-sort div.select {
+  padding: 0 13px 0 0;
+  color: #0d59a0;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+div.category-sort div.select div.text {
+  border-bottom: 1px dotted #0d59a1;
+}
+
+div.category-sort div.select i.arrow {
+  width: 7px;
+  height: 4px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+  background: url('http://best-muzon.com/templates/ortemp/img/sprite.png') -624px 0 no-repeat;
+}
+
+div.category-sort div.dropdown {
+  position: absolute;
+  list-style: none;
+  left: 0px;
+  height: auto;
+  bottom: auto;
+  top: 29px;
+  display: none;
+}
+
+div.category-sort div.dropdown ul li:hover {
+  background: #e4e0b6;
+}
+div.category-sort div.dropdown ul li.selected {
+  display: none;
+}
+div.category-sort div.dropdown-active {
+  background: #f2efcd;
+  display: block;
+}
+
+div.category-sort span.select-box span.select-fix {
+  width: 13px;
+  height: 7px;
+  position: absolute;
+  top: -6px;
+  left: 30px;
+  background: url('http://best-muzon.com/templates/ortemp/img/sprite.png') -666px -8px no-repeat;
+}
+
+div.category-sort span.select-box ul {
+  list-style-position: inside;
+}
+
+div.category-sort span.select-box ul li {
+  margin: 0;
+  float: none;
+  padding: 5px 8px 5px;
+  line-height: 1.5em;
+  background: none;
+  color: #797546;
+  border-top: 1px solid white;
+  list-style: none;
+}
+
+div.materials-amount {
+  margin: 0 0 0 26px;
+  float: right;
+  font-size: 13px;
+}
+
+table.category-list {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+table.category-list thead td {
+  height: 31px;
+  font-size: 11px;
+  color: #999;
+  vertical-align: middle;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+table.category-list thead td.thead_0 {
+  width: 0;
+}
+
+table.category-list thead td.thead_1 {
+  width: 38px;
+}
+
+table.category-list tbody td {
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 14px0 16px;
+}
+
+table.category-list tbody tr:nth-child(2n) {
+  background: #f0f0f0;
+}
+
+div.sidebar {
+  width: 240px;
+  float:right;
+}
+
+div.sidebar div.sidebar-title {
+  background: url('/assets/img/icon2.png') no-repeat;
+  min-height: 27px;
+  margin: 0 0 18px 0;
+  padding: 5px 0 16px 41px;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 21px;
+}
+
+div.sidebar ul {
+  list-style-position: inside;
+}
+
+div.sidebar ul li {
+  margin: 0 0 13px 0;
+  padding: 0 0 0 12px;
+  list-style: none;
+  background: url('http://best-muzon.com/templates/ortemp/img/marker.png') 0 8px no-repeat;
+  font-size: 16px;
+}
+
+div.sidebar li a {
+  color: #0d59a0;
+  border-bottom: 1px solid #9ebfd9;
+  text-decoration: none;
+}
+
+div.sidebar li a:hover {
+  border-bottom: 1px solid #0d59a0;
+}
+
+div.material-block {
+      margin-left: -15px;
+      margin-right: -15px;
+}
+
+div.material-block a.item {
+  text-align: center;
+  height: 250px;
+  margin-top: 25px;
+  width: 25%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #2189be;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+div.material-block a.item:hover img {
+  opacity: 0.5;
+}
+div.material-block a.item:hover {
+  text-decoration: underline;
+}
+div.material-block img {
+  margin: 10px auto;
+  border: 0;
+  opacity: 1;
+  transition: opacity ease 0.5s;
+}
+
+div.footer {
+  padding: 25px 30px 10px;
+  min-height: 100px;
+  position: relative;
+  background: #fff url('http://best-muzon.com/templates/ortemp/img/shadow.png') no-repeat top left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+}
+
+div.footer span.copyrights {
+  padding: 0 0 9px 0;
+  font-size: 14px;
+}
+
+div.footer span.navigation {
+  overflow: hidden;
+
+}
+
+div.footer span.navigation ul {
+  list-style-position: inside;
+}
+
+div.footer span.navigation ul li {
+  margin: 0 7px 0 0;
+  padding: 0 13px 0 0;
+  margin: 0 auto;
+  display: inline;
+  background: url('http://best-muzon.com/templates/ortemp/img/marker-2.png') right 9px no-repeat;
+  list-style: none;
+}
+div.footer span.navigation ul li:last-child {
+  background: none;
+}
+div.footer span.navigation ul li a {
+  color: #0d59a0;
+  border-bottom: 1px solid #9ebfd9;
+  text-decoration: none;
+
+}
+
+div.footer span.navigation ul li a:hover {
+  border-bottom: 1px solid #0d59a0;
+}
